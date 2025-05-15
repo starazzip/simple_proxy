@@ -9,7 +9,8 @@
 
 ## 安裝需求
 ```
-pip install proxy.py python-dotenv
+poetry shell
+poetry install
 ```
 
 ## .env 設定
@@ -21,13 +22,13 @@ PROXY_PASSWORD=xxxx
 ## 啟動方式
 在專案根目錄下執行以下指令：
 ```
-python -m proxy --hostname 0.0.0.0 --port 8899 --plugins AuthPlugin.AuthPlugin
+python -m proxy --hostname 0.0.0.0 --port 8899 --plugins  auth_plugin.AuthPlugin
 ```
 
 其中：
 * --hostname 0.0.0.0 允許外部設備連線
 * --port 8899 指定 Proxy 使用的通訊埠
-* --plugins AuthPlugin.AuthPlugin 簡單的帳密驗證插件
+* --plugins  auth_plugin.AuthPlugin 簡單的帳密驗證插件
 
 
 ## curl 測試：
