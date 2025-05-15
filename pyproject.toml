@@ -1,14 +1,13 @@
 [tool.poetry]
-name = "proxy-server"
+name = "simple-proxy"
 version = "0.1.0"
 description = ""
-authors = ["azzip <azzip-rnd@skvip.org>"]
+authors = ["az <azzipstar@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
 proxy-py = "^2.4.10"
-httpx = {extras = ["socks"], version = "^0.28.1"}
 dotenv = "^0.9.9"
 
 
