@@ -32,5 +32,5 @@ python -m proxy --hostname 0.0.0.0 --port 8899 --plugins AuthPlugin.AuthPlugin
 
 ## curl 測試：
 ```
-curl -x http://localhost:8899 https://httpbin.org/ip --proxy-user azzip:qwer1234
+curl -x http://localhost:8899 https://httpbin.org/ip --proxy-user username:password
 ```
